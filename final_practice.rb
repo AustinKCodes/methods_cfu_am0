@@ -34,10 +34,11 @@ def greet_person(first_name, middle_name, last_name)
 end
 puts greet_person("John", "Jingle", "Jacob")
 # What is the return value of your method??????????
-
+# "Hey, John Jingle Jacob"
 # How many arguments did you pass your method?
+# 3
 # What data type was your argument(s)?
-
+# Strings
 
 # 4: Write a method named square that takes in one integer, and returns the square of that integer.
 # Bonus: Print a sentence that interpolates the return value of your square method.
