@@ -9,20 +9,19 @@
 "Hello World".downcase
 
 
-"Hello World".include?("Hello")
+puts "Hello World".include?("Hello")
+# Here the method include? is calling back to the variable piece "Hello" and asking if it is in the string.
 
+p "Hello World".end_with?("Hello")
+# Here the method is seeing if the string ends with "Hello"
 
-"Hello World".end_with?("Hello")
+p "Hello World".end_with?("rld")
+# Here the method is calling to ask if the string ends with "rld"
+p 12.even?
+# This method ask if the integer is even and outputs true or false
 
-
-"Hello World".end_with?("rld")
-
-
-12.even?
-
-
-18.next
-
+p 18.next
+# This method calls on the integer and then outputs the next number 
 
 
 # SECTION 2: Calling methods on variables assigned to strings.
@@ -46,11 +45,18 @@ puts first_name.start_with?("J")
 # Call a different built-in Ruby method on each of your variables. 
 # https://ruby-doc.org/core-3.1.0/Integer.html
 # Include comments above each method call explaining the impact and return value of that method.
-
-
-
+# This command with the even? method will print true to the console because 24 is an even number
+puts 24.even?
+#This method and command with show the remainder of dividing by itself
+puts 47.remainder
 # SECTION 4: Calling methods on variables assigned to arrays.
 # Declare 2 variables assigned to arrays.
 # Call a different built-in Ruby method on each of your variables. 
 # https://ruby-doc.org/core-3.1.0/Array.html
 # Include comments above each method call explaining the impact and return value of that method.
+#This command will print out the last value in the array
+ages[6, 5, 9, 7]
+puts ages.last 
+#This will print out the first string in the array
+friends["travis", "Kelsey", "Dave"]
+puts friends.first
